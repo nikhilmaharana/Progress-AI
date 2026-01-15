@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgresAI - Career Guidance Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.PNG" alt="ProgresAI Logo"> 
+        </div>
+        <h1 class="nav-title">AI Powered Career Guidance ChatBot (ProgresAI)</h1>
+    </nav>
+
+    <!-- Welcome Modal -->
+    <div id="welcome-modal">
+        <div class="modal-content">
+            <h2>Welcome to ProgresAI</h2>
+            <label for="username">Enter your name:</label>
+            <input type="text" id="username" placeholder="Your Name">
+            <button id="start-chat">Start Chat</button>
+        </div>
+    </div>
+
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <div id="chat-box" class="chat-box">
+            <div class="chat-message bot-message">
+                <p>Hi there! I'm ProgresAI, your career guidance assistant. How can I help you today?</p>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Ask me anything about your career..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>For More Info: <strong>Email:</strong> <a href="mailto:nikhilm2024@gift.edu.in">nikhilm2024@gift.edu.in</a> | <strong>Phone:</strong> <a href="tel:+919938956809">+91 99389 56809</a></p>
+        <p>Developed by <strong>Nikhil Maharana</strong> with AI support from <strong>ChatGPT</strong> and powered by <strong>Groq AI</strong>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
